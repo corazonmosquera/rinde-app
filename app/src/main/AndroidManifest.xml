@@ -22,5 +22,7 @@
         <activity android:name=".LoginActivity" android:exported="false" />
         <activity android:name=".RecoverPasswordActivity" android:exported="false" />
         <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".ProductDetailActivity" android:exported="false" />
+        <activity android:name=".PaymentActivity" android:exported="false" />
     </application>
 </manifest>

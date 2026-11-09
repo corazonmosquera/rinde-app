@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, LoginActivity::class.java))
                 finishAffinity()
             } else {
-                showScreen(item.title.toString(), role, toolbar)
+                showScreen(item.itemId, item.title.toString(), role, toolbar)
             }
             true
         }
@@ -51,16 +52,24 @@ class MainActivity : AppCompatActivity() {
         // Menú inferior (Bottom Navigation) según el rol
         bottomNav.inflateMenu(role.menuRes)
         bottomNav.setOnItemSelectedListener { item ->
-            showScreen(item.title.toString(), role, toolbar)
+            showScreen(item.itemId, item.title.toString(), role, toolbar)
             true
         }
         bottomNav.selectedItemId = bottomNav.menu.getItem(0).itemId
     }
 
-    private fun showScreen(title: String, role: Role, toolbar: MaterialToolbar) {
+    private fun screenFor(itemId: Int, title: String, role: Role): Fragment = when (itemId) {
+        R.id.nav_home -> HomeFragment()
+        R.id.nav_catalog -> CatalogFragment()
+        R.id.nav_cart -> CartFragment()
+        R.id.nav_profile, R.id.drawer_profile -> ProfileFragment()
+        else -> PlaceholderFragment.newInstance(title, role.label)
+    }
+
+    private fun showScreen(itemId: Int, title: String, role: Role, toolbar: MaterialToolbar) {
         toolbar.title = title
         supportFragmentManager.beginTransaction()
-            .replace(R.id.container, PlaceholderFragment.newInstance(title, role.label))
+            .replace(R.id.container, screenFor(itemId, title, role))
             .commit()
     }
 
