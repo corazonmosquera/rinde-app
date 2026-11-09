@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Rinde" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/rinde_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/rinde_accent</item>
+        <item name="colorOnSecondary">@color/rinde_ink</item>
+        <item name="colorSecondaryContainer">@color/rinde_tint</item>
+        <item name="colorOnSecondaryContainer">@color/rinde_primary</item>
+        <item name="android:colorBackground">@color/rinde_bg</item>
+        <item name="android:statusBarColor">@color/rinde_primary_dark</item>
+        <item name="materialButtonStyle">@style/Rinde.Button</item>
+    </style>
+
+    <style name="Theme.Rinde.Splash" parent="Theme.Rinde">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="Rinde.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/rinde_accent</item>
+        <item name="android:textColor">@color/rinde_ink</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Rinde.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/rinde_primary</item>
+        <item name="android:textColor">@color/rinde_primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Rinde.Title" parent="">
+        <item name="android:textColor">@color/rinde_ink</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Rinde.Body" parent="">
+        <item name="android:textColor">@color/rinde_muted</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

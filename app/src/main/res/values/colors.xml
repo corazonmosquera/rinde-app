@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="rinde_primary">#0F5C4D</color>
+    <color name="rinde_primary_dark">#0A4338</color>
+    <color name="rinde_accent">#F2A33A</color>
+    <color name="rinde_ink">#12211E</color>
+    <color name="rinde_muted">#4A5F5A</color>
+    <color name="rinde_bg">#EEF3F1</color>
+    <color name="rinde_tint">#E3EFEC</color>
+    <color name="role_buyer">#0F5C4D</color>
+    <color name="role_seller">#1F3A5F</color>
+    <color name="role_admin">#3B2A4F</color>
+</resources>

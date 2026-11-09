@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rinde</string>
+    <string name="tagline">Compra lo que dura</string>
+    <string name="login_subtitle">Compra por necesidad, elige por durabilidad</string>
+    <string name="login_as">Ingresar como</string>
+    <string name="role_buyer">Comprador</string>
+    <string name="role_seller">Vendedor</string>
+    <string name="role_admin">Administrador</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="btn_biometric">Ingresar con huella</string>
+    <string name="link_recover">¿Olvidaste tu contraseña?</string>
+    <string name="error_email">Escribe un correo válido</string>
+    <string name="error_password">La contraseña debe tener mínimo 6 caracteres</string>
+    <string name="biometric_title">Ingreso con huella</string>
+    <string name="biometric_subtitle">Confirma tu identidad para entrar a Rinde</string>
+    <string name="biometric_cancel">Cancelar</string>
+    <string name="biometric_unavailable">Este dispositivo no tiene huella configurada</string>
+    <string name="recover_title">Recuperar contraseña</string>
+    <string name="recover_info">Escribe tu correo y te enviaremos un enlace para crear una contraseña nueva.</string>
+    <string name="btn_send_link">Enviar enlace</string>
+    <string name="recover_sent">Si el correo está registrado, recibirás un enlace en unos minutos.</string>
+    <string name="drawer_profile">Mi perfil</string>
+    <string name="drawer_about">Acerca de Rinde</string>
+    <string name="drawer_logout">Cerrar sesión</string>
+    <string name="nav_open">Abrir menú</string>
+    <string name="back">Volver</string>
+    <string name="placeholder_subtitle">Pantalla de %1$s (en construcción)</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_catalog">Catálogo</string>
+    <string name="menu_cart">Carrito</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_my_products">Mis productos</string>
+    <string name="menu_orders">Pedidos</string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_users">Usuarios</string>
+    <string name="menu_products">Productos</string>
+    <string name="menu_reports">Reportes</string>
+</resources>
