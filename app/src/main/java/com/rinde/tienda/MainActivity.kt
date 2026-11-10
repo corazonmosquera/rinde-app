@@ -62,7 +62,13 @@ class MainActivity : AppCompatActivity() {
         R.id.nav_home -> HomeFragment()
         R.id.nav_catalog -> CatalogFragment()
         R.id.nav_cart -> CartFragment()
-        R.id.nav_profile, R.id.drawer_profile -> ProfileFragment()
+        R.id.nav_dashboard -> AdminDashboardFragment()
+        R.id.nav_users -> AdminUsersFragment()
+        R.id.nav_reports -> AdminReportsFragment()
+        R.id.nav_my_products, R.id.nav_products -> SellerProductsFragment()
+        R.id.nav_orders -> SellerOrdersFragment()
+        R.id.nav_profile, R.id.drawer_profile ->
+            if (role == Role.VENDEDOR) SellerProfileFragment() else ProfileFragment()
         else -> PlaceholderFragment.newInstance(title, role.label)
     }
 

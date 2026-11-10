@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReportStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            style="@style/Rinde.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/report_by_status"
+            android:textSize="18sp" />
+
+        <TextView
+            style="@style/Rinde.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/status_paid" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/barPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:indicatorColor="@color/rinde_accent"
+            app:trackColor="@color/rinde_tint"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="10dp" />
+
+        <TextView
+            style="@style/Rinde.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/status_shipped" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/barShipped"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:indicatorColor="@color/role_seller"
+            app:trackColor="@color/rinde_tint"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="10dp" />
+
+        <TextView
+            style="@style/Rinde.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/status_delivered" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/barDelivered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:indicatorColor="@color/rinde_primary"
+            app:trackColor="@color/rinde_tint"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="10dp" />
+    </LinearLayout>
+</ScrollView>

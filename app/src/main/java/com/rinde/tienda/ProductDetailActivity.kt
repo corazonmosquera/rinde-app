@@ -15,7 +15,10 @@ class ProductDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_detail)
 
-        val product = ProductRepository.byId(intent.getIntExtra(EXTRA_ID, 1))
+        val product = ProductRepository.byId(intent.getIntExtra(EXTRA_ID, 1)) ?: run {
+            finish()
+            return
+        }
 
         findViewById<MaterialToolbar>(R.id.toolbarDetail).setNavigationOnClickListener { finish() }
         findViewById<TextView>(R.id.tvDName).text = product.name

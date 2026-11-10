@@ -71,12 +71,14 @@ class PaymentActivity : AppCompatActivity() {
     }
 
     private fun confirmPayment() {
-        val order = "#" + (1000 + Random.nextInt(9000))
+        val number = 1000 + Random.nextInt(9000)
+        val order = "#$number"
         MaterialAlertDialogBuilder(this)
             .setTitle(R.string.pay_ok_title)
             .setMessage(getString(R.string.pay_ok_msg, order))
             .setCancelable(false)
             .setPositiveButton(R.string.ok) { _, _ ->
+                OrderRepository.addFromCart(number)
                 CartManager.clear()
                 finish()
             }

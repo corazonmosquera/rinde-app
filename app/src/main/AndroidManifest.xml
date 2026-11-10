@@ -24,5 +24,7 @@
         <activity android:name=".MainActivity" android:exported="false" />
         <activity android:name=".ProductDetailActivity" android:exported="false" />
         <activity android:name=".PaymentActivity" android:exported="false" />
+        <activity android:name=".ProductFormActivity" android:exported="false" />
+        <activity android:name=".UserFormActivity" android:exported="false" />
     </application>
 </manifest>
